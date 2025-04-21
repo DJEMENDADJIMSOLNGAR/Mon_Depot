@@ -1,1 +1,96 @@
+"<!DOCTYPE html>
+<html lang="fr">
+    <head>
+    <meta name="viewport" content="width=devise-width, initial-scale=1">
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="styl.css">
+      <script src="script.js"></script>
+      <title>MAQUETTE</title>
+</head>
+<body>
+  <div class="content">
 
+    <div class="header">
+        <nav>
+          <ul class="menu">
+            <li><a href="home">Home</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="service">Service</a></li>
+            <li><a href="contact">contact</a></li>
+
+          </ul>
+        </nav>
+    </div>
+
+    <div class="left">
+      <div style="padding: 20px;">
+        <fieldset style="margin-bottom: 20px;">
+          <legend><strong>À propos du site</strong></legend>
+          <p>Bienvenue sur notre site </p>
+        </fieldset>
+
+        <fieldset>
+          <legend><strong>Nos services</strong></legend>
+          <ul>
+            <li>Articles </li>
+            <li>Tutoriels </li>
+            <li>Abonnement à notre newsletter</li>
+          </ul>
+        </fieldset>
+      </div>
+    </div>
+    <div class="right">
+      <div style="padding: 20px;">
+        <h2>Abonnez-vous à notre newsletter</h2>
+        <form>
+          <label for="email">Adresse email :</label><br>
+          <input type="email" id="email" name="email" required placeholder="Entrez votre email" style="width: 100%; padding: 10px; margin-top: 5px;"><br><br>
+          <button type="submit">S'abonner</button>
+        </form>
+
+        <hr style="margin: 20px 0;">
+
+        <h3>Contact</h3>
+        <p>
+          Site Web : <a href="https://www.exemple.com" target="_blank">www.exemple.com</a><br>
+          Email : <a href="mailto:contact@exemple.com">contact@exemple.com</a><br>
+        </p>
+      </div>
+    </div>
+
+    <div class="center">
+      <div class="slideshow-container"> 
+        <div class="slide fade">
+          <img src="img/00_001.jpg" alt="Maquillage 1">
+        </div>
+        <div class="slide fade">
+          <img src="img/01-01-12.jpg" alt="Maquillage 2">
+        </div>
+        <div class="slide fade">
+          <img src="img/!!!.bmp" alt="Maquillage 3">
+        </div>
+        <div class="slide fade">
+          <img src="img/00000.GIF" alt="Maquillage 4">
+        </div>
+        <div class="slide fade">
+          <img src="img/(14.bmp" alt="Maquillage 4">
+        </div>
+        <div class="slide fade">
+          <img src="img/(R)wen sadati000.gif" alt="Maquillage 4">
+        </div>
+        <div class="slide fade">
+          <img src="img/How-to-Catch-Big-Fish.jpg" alt="Maquillage 4">
+        </div>
+      </div>
+    </div>
+  
+  </div>
+    
+  <div class="footer">
+    &copy; <span id="annee"></span> -2025 
+  </div>
+    // Année dynamique
+    document.getElementById("annee").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>">html/index.html

@@ -1,1 +1,38 @@
+// 1. Message de confirmation à l’abonnement
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.querySelector(".right form");
 
+  form.addEventListener("submit", function (event) {
+    event.preventDefault(); // Empêche le rechargement
+    const email = document.querySelector("#email").value;
+
+    if (email.trim() !== "") {
+      alert(`Merci pour votre abonnement, ${email} !`);
+      form.reset();
+    } else {
+      alert("Veuillez entrer une adresse email valide.");
+    }
+  });
+
+  // 2. Slideshow automatique
+  let slideIndex = 0;
+  const slides = document.querySelectorAll(".slide");
+
+  function showSlides() {
+    slides.forEach((slide) => {
+      slide.style.display = "none";
+    });
+
+    slideIndex++;
+    if (slideIndex > slides.length) {
+      slideIndex = 1;
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 3000); // Change d'image toutes les 3 secondes
+  }
+
+  showSlides();
+
+  
+});
